@@ -64,7 +64,7 @@ public class AccessFilter implements GlobalFilter, Ordered {
 		// TODO Auto-generated method stub
 
 		try {
-			if (!"redis".equals(tokenType)) {
+			if (!"com/open/capacity/redis".equals(tokenType)) {
 				return chain.filter(exchange);
 			}
 			String accessToken = TokenUtil.extractToken(exchange.getRequest());

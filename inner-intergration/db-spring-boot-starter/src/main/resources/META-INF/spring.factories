@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.open.capacity.datasource.DataSourceAutoConfig
+com.open.capacity.db.config.TenantAutoConfigure,\
+com.open.capacity.db.config.MybatisPlusAutoConfigure

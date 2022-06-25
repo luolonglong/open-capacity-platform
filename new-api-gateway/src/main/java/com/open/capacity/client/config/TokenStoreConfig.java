@@ -44,7 +44,7 @@ public class TokenStoreConfig {
 	}
 	
 	@Bean
-	@ConditionalOnProperty(prefix="security.oauth2.token.store",name="type" ,havingValue="redis" ,matchIfMissing=true)
+	@ConditionalOnProperty(prefix="security.oauth2.token.store",name="type" ,havingValue= "com/open/capacity/redis",matchIfMissing=true)
 	public RedisTemplateTokenStore redisTokenStore(RedisConnectionFactory connectionFactory){
 		Assert.state(connectionFactory != null, "connectionFactory must be provided");
 		RedisTemplateTokenStore redisTemplateStore = new RedisTemplateTokenStore(connectionFactory)  ;

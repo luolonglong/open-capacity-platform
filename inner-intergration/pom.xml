@@ -8,7 +8,7 @@
   <artifactId>inner-intergration</artifactId>
   <packaging>pom</packaging>
   <description>内部支撑工具</description>
-    
+
   <modules>
   	<!-- 关系型数据库配置-->
   	<module>db-spring-boot-starter</module>
@@ -24,12 +24,11 @@
   	<module>uaa-client-spring-boot-starter</module>
   	<!-- 认证服务器配置 -->
   	<module>uaa-server-spring-boot-starter</module>
-  	<!-- mq -->
-  	<module>rabbitmq-spring-boot-starter</module>
   	<!-- 自定义负载均衡策略-->
-  	<module>ribbon-spring-boot-starter</module>
+  	<module>loadbalancer-spring-boot-starter</module>
   	<module>sentinel-spring-boot-starter</module>
-
+      <!-- 自定义负载均衡策略-->
+    <module>common-core</module>
       <!-- 分布式任务调度-->
   	<module>elastic-job-spring-boot-starter</module>
 
